@@ -9,7 +9,7 @@ root.title('Dream Home')
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="21bcs041@",
+  password="Passward",
   database="dreamhomefinal"
 )
 
