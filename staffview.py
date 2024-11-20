@@ -1,12 +1,11 @@
 from tkinter import *
-import tkinter as tk
 from tkinter import ttk
 import os
 import mysql.connector
 mydb = mysql.connector.Connect(
     host='localhost',
     user='root',
-    password='21bcs041@',
+    password='1234',
     database='dreamhomefinal'
 )
 

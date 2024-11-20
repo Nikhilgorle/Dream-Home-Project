@@ -1,1 +1,0 @@
-root.iconbitmap('Image Location')

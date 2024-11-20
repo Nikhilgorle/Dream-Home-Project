@@ -1,15 +1,15 @@
 from tkinter import *
-# from PIL import ImageTk,Image
+from PIL import ImageTk,Image
 import os
 import mysql.connector
 root = Tk()
 root.geometry('800x800')
 root.title('Dream Home')
-# root.iconbitmap('Image Location')
+# root.iconbitmap('E:/Sriram/DBMS/case study/Dream Home rentals/Interface development')
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="Passward",
+  password="1234",
   database="dreamhomefinal"
 )
 
@@ -158,10 +158,10 @@ def home_button():
     form_frame = Frame(main_frame, padx=20, pady=10, bg="#a8defb")
 
     my_img = Image.open("logo.jpg")
-    my_img = my_img.resize((400, 400), Image.ANTIALIAS)
-    # my_img = ImageTk.PhotoImage(my_img)
+    my_img = my_img.resize((400, 400), Image.LANCZOS)
+    my_img = ImageTk.PhotoImage(my_img)
     img_label = Label(form_frame, image=my_img)
-    img_label.image = my_img  # keep a reference to the image to prevent garbage collection
+    img_label.image = my_img
     img_label.grid(row=0, column=0, columnspan=2, pady=20)
 
     sview_label = Label(form_frame, text="To view staff details", font=("Arial", 16), bg="#a8defb", fg="#000000")

@@ -6,7 +6,7 @@ import mysql.connector
 mydb = mysql.connector.Connect(
     host='localhost',
     user='root',
-    password='Passward',
+    password='1234',
     database='dreamhomefinal'
 )
 

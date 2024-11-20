@@ -6,8 +6,8 @@ import mysql.connector
 mydb = mysql.connector.Connect(
     host='localhost',
     user='root',
-    password='21bcs041@',
-    database='dreamhomefinal'
+    password='1234',
+    database='dreamhome'
 )
 
 def back():
